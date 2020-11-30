@@ -6,5 +6,18 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: 'Tom Donohoe: Software Engineer',
+    description: 'The personal portfolio of Tom Donohoe.'
+  },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    `gatsby-transformer-remark`,
+  ]
 }
