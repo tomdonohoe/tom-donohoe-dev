@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #011627;
+    color: #FDFFFC;
+}
+
+a {
+    color: #FDFFFC;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2EC4B6;
+}

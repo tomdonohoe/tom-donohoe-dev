@@ -1,29 +1,12 @@
-import React from "react"
-import { graphql } from "gatsby"
-import PostLink from "../components/post-link"
+import React from 'react'
+import Container from '../components/Container/Container.js'
 
-const IndexPage = ({ data }) => {
-  const Posts = data.allMarkdownRemark.edges
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
-
-    return <div>{Posts}</div>
+const IndexPage = () => {
+    return ( 
+          <Container>
+            <div>Hello</div>
+          </Container>
+    )
 }
 
 export default IndexPage
-export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            slug
-            title
-          }
-        }
-      }
-    }
-  }
-`

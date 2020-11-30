@@ -3,9 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-
 module.exports = {
-  /* Your site config here */
   siteMetadata: {
     title: 'Tom Donohoe: Software Engineer',
     description: 'The personal portfolio of Tom Donohoe.'
