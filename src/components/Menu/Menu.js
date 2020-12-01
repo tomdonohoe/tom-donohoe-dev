@@ -1,18 +1,21 @@
 import React from 'react'
+import menuStyles from './Menu.module.css'
+import MenuIcon from './MenuIcon.js'
 
 const Menu = () => {
 
     return (
-        <nav>
-            <div className="logo">
-                Tom Donohoe
+        <nav className={menuStyles.menu}>
+            <div>
+            <a href="/">Tom Donohoe</a>
             </div>
-            <div className="links">
-                <a href="/about">about</a>
-                <a href="#">projects</a>
-                <a href="#">resume</a>
-                <a href="/posts">blog</a>                
+            <div className={menuStyles.menuLinks}>
+                <a className={menuStyles.menuLink} href="/about">about</a>
+                <a className={menuStyles.menuLink} href="/">projects</a>
+                <a className={menuStyles.menuLink} href="/">resume</a>
+                <a className={menuStyles.menuLink} href="/posts">blog</a>                
             </div>
+            <MenuIcon />
         </nav>
     )
 }

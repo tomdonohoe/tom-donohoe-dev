@@ -1,0 +1,19 @@
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    height: 100px;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+.menuLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: end;
+}
+
+.menuLink {
+    padding: 20px;
+}
