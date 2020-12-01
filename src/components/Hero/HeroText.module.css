@@ -1,0 +1,9 @@
+.heroText {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.jobTitle {
+    color: #2EC4B6;
+}

@@ -1,12 +1,14 @@
 import React from 'react'
-import menuStyles from './Menu.module.css'
+import menuStyles from './MobileMenu.module.css'
+import MenuIcon from './MenuIcon.js'
 
-const Menu = () => {
+const MobileMenu = () => {
 
     return (
         <nav className={menuStyles.menu}>
-            <div>
-            <a href="/">Tom Donohoe</a>
+            <div className={menuStyles.header}>
+                <a href="/">Tom Donohoe</a>
+                <MenuIcon />
             </div>
             <div className={menuStyles.menuLinks}>
                 <a className={menuStyles.menuLink} href="/about">about</a>
@@ -18,4 +20,4 @@ const Menu = () => {
     )
 }
 
-export default Menu
+export default MobileMenu

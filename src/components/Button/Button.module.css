@@ -1,0 +1,13 @@
+.btn {
+    display: inline-block;
+    background-color: #011627;
+    border: 2px solid #2EC4B6;
+    border-radius: 30px;
+    padding: 10px 40px;
+    transition-duration: 0.2s;
+}
+
+.btn:hover {
+    background-color: #2EC4B6;
+    color: #FDFFFC;
+}
