@@ -18,13 +18,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.container {
-    display: grid;
-    row-gap: 50px;
-    margin: 3rem auto;
-    max-width: 80%;
-}
-
 .site {
     display: flex;
     min-height: 100vh;

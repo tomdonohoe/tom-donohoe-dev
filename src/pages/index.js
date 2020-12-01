@@ -5,10 +5,10 @@ import TechStack from '../components/TechStack/TechStack.js'
 
 const IndexPage = () => {
     return ( 
-          <div className="container">
+          <Container>
             <Hero />
             <TechStack />           
-          </div>
+          </Container>
     )
 }
 
