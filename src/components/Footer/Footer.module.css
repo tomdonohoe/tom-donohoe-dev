@@ -1,0 +1,18 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0 auto;
+    width: 80%;
+    border-top: 2px solid #FDFFFC;
+    padding: 15px;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.copyright {
+    text-align: right;
+}

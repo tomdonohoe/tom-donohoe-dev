@@ -1,12 +1,12 @@
 import React from 'react'
 import Menu from './Menu/Menu.js'
-import Footer from './Footer.js'
+import Footer from './Footer/Footer.js'
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className='site'>
         <Menu />
-        {children}
+        <div className='site-content'>{children}</div>
         <Footer />
     </div>
   )

@@ -17,3 +17,13 @@ a:hover {
     color: #2EC4B6;
     text-decoration: underline;
 }
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+  
+.site-content {
+    flex-grow: 1;
+}
