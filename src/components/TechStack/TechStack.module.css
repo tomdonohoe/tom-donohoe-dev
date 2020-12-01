@@ -1,0 +1,11 @@
+.techStack {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 20px;
+}
+
+.techStack img {
+    height: 100px;
+    width: auto;
+    filter: grayscale(100%);
+}
