@@ -1,14 +1,12 @@
 import React from 'react'
 import PostContainer from '../components/Container/PostContainer.js'
-import Posts from '../components/Posts/Posts.js'
-import Bio from '../components/Bio/Bio.js'
-
+import Projects from '../components/Projects/Projects.js'
 
 const PostsPage = () => {
     return (
       <PostContainer>
-        <h1>Latest posts</h1>
-        <Posts/>
+        <h1>Latest projects</h1>
+        <Projects/>
       </PostContainer>
     )
 }

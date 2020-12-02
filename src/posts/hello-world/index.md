@@ -1,7 +1,8 @@
 ---
+type: "post"
 slug: "/post/hello-tom"
 date: "2020-11-30"
-title: "Hello Tom"
+title: "Hello Tom, this is first blog post on your site"
 author: "Tom Donohoe"
 tags: ['one', 'two']
 excerpt: "My first blog post"

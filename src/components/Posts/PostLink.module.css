@@ -1,0 +1,17 @@
+.postLink {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    border-bottom: 2px dotted #FDFFFC;
+    padding: 2rem 0;
+}
+
+.postLink:last-child {
+    border-bottom: none;
+}
+
+.meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #2EC4B6;
+}

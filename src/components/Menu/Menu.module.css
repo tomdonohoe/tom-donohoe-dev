@@ -17,3 +17,14 @@
 .menuLink {
     padding: 20px;
 }
+
+@media (max-width: 600px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+
+    .menuLinks { 
+        grid-template-columns: 1fr;
+    }
+}
