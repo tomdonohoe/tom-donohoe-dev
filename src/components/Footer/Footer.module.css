@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     margin: 0 auto;
+    margin-top: 2rem;
     width: 80%;
     border-top: 2px solid #FDFFFC;
     padding: 15px;
@@ -11,6 +12,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    text-align: center;
 }
 
 .copyright {

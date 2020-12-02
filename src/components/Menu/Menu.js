@@ -5,7 +5,7 @@ const Menu = () => {
 
     return (
         <nav className={menuStyles.menu}>
-            <div>
+            <div className={menuStyles.logo}>
             <a href="/">Tom Donohoe</a>
             </div>
             <div className={menuStyles.menuLinks}>

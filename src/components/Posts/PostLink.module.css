@@ -6,12 +6,33 @@
     padding: 2rem 0;
 }
 
-.postLink:last-child {
+/* .postLink:last-child {
     border-bottom: none;
-}
+} */
 
 .meta {
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #2EC4B6;
 }
+
+@media (max-width: 1200px) {
+    .meta {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .meta {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .meta {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+}
+

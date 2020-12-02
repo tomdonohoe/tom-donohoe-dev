@@ -17,7 +17,6 @@
 @media (max-width: 900px) {
     .techStack {
         grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
     }
 }
 

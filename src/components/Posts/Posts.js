@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from "gatsby"
+import styles from './Posts.module.css'
 import PostLink from './PostLink.js'
 
 const Posts = () => {
@@ -24,7 +25,16 @@ const Posts = () => {
             `}
               render={data => {
                 let posts = data.allMarkdownRemark.edges.map(edge => <PostLink key={edge.node.id} post={edge.node} />)
-                return <div>{posts}</div>
+                return (
+                  <div>
+                    <div className={styles.postsHeader}>
+                      <h1>Latest Posts</h1>
+                    </div>
+                  <div className={styles.postsList}>
+                    {posts}
+                  </div>
+                  </div>
+                )
               }}
         />
     )

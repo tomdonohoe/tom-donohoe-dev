@@ -1,0 +1,22 @@
+.postsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+    .postsList {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .postsList {
+        text-align: center;
+    }
+
+    .postsHeader {
+        text-align: center;
+    }
+}
