@@ -10,6 +10,7 @@ const projectTemplate = ({ data }) => {
         <PostContainer>
         <div className="post">
             <h1>{frontmatter.title}</h1>
+            <h2>tech stack: {frontmatter.stack}</h2>
             <div 
                 className="content"
                 dangerouslySetInnerHTML={{ __html: html }}
@@ -28,6 +29,7 @@ export const pageQuery = graphql`
       frontmatter {
         slug
         title
+        stack
         author
         date(formatString: "MMMM DD, YYYY")
         excerpt

@@ -16,3 +16,14 @@
 .copyright {
     text-align: right;
 }
+
+
+@media (max-width: 900px) {
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}

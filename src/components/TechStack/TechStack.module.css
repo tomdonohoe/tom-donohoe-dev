@@ -9,3 +9,21 @@
     width: auto;
     filter: grayscale(100%);
 }
+
+.techStack img:hover {
+    filter: grayscale(0%);
+}
+
+@media (max-width: 900px) {
+    .techStack {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .techStack {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}

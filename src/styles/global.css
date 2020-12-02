@@ -14,6 +14,18 @@ a {
     text-decoration: none;
 }
 
+
+/* Light mode 
+html {
+    background-color: #FDFFFC;
+    color: #011627;
+}
+
+a {
+    color: #011627;
+    text-decoration: none;
+} */
+
 a:hover {
     color: #2EC4B6;
     text-decoration: underline;
