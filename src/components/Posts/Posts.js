@@ -3,12 +3,12 @@ import { StaticQuery, graphql } from "gatsby"
 import styles from './Posts.module.css'
 import PostLink from './PostLink.js'
 
-const Posts = () => {
+const Posts = ({ type }) => {
     return (
         <StaticQuery
             query={graphql`
             query {
-              allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, filter: {frontmatter: {type: {eq: "post"}}}) {
+              allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
                 edges {
                   node {
                     id
@@ -17,6 +17,8 @@ const Posts = () => {
                       slug
                       title
                       author
+                      stack
+                      type
                     }
                   }
                 }
@@ -24,11 +26,14 @@ const Posts = () => {
             }
             `}
               render={data => {
-                let posts = data.allMarkdownRemark.edges.map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+                console.log(data.allMarkdownRemark.edges)
+                let posts = data.allMarkdownRemark.edges
+                  .filter(edge => edge.node.frontmatter.type === type)
+                  .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
                 return (
                   <div>
                     <div className={styles.postsHeader}>
-                      <h1>Latest Posts</h1>
+                      <h1>Latest {type}s</h1>
                     </div>
                   <div className={styles.postsList}>
                     {posts}

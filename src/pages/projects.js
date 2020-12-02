@@ -1,13 +1,10 @@
 import React from 'react'
-import Projects from '../components/Projects/Projects.js'
+import Posts from '../components/Posts/Posts.js'
 
-const PostsPage = () => {
+const ProjectPage = () => {
     return (
-        <div>
-          <h1>Latest projects</h1>
-          <Projects/>
-        </div>
+        <Posts type="project" />
     )
 }
 
-export default PostsPage
+export default ProjectPage

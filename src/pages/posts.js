@@ -3,7 +3,7 @@ import Posts from '../components/Posts/Posts.js'
 
 const PostsPage = () => {
     return (
-        <Posts/>
+        <Posts type="post"/>
     )
 }
 
