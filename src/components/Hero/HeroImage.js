@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './HeroImage.module.css'
-import Tom from './tom.jpeg'
+import Avatar from './img_placeholder_avatar.jpg'
 
 const HeroImage = () => {
 
     return (
-        <img className={styles.heroImage} src={Tom} />
+        <img className={styles.heroImage} src={Avatar} />
     )
 }
 
