@@ -21,6 +21,10 @@
         grid-template-columns: 1fr;
     }
 
+    .menuLinks {
+        justify-items: center;
+    }
+
     .logo {
         text-align: center;
     }

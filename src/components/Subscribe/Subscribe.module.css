@@ -1,0 +1,11 @@
+.subscribeInput {
+    padding: 0.5rem;
+    border: 0;
+}
+
+.subscribeBtn {
+    padding: 0.5rem;
+    border: 0;
+    background-color: #2EC4B6;
+    color: #FDFFFC;
+}

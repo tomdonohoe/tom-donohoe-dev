@@ -4,7 +4,7 @@ slug: "/post/third"
 date: "2020-11-30"
 title: "Hello third, this is third blog post on your site"
 author: "Tom Donohoe"
-tags: ['one', 'two']
+tags: ['one', 'two', 'three', 'four']
 excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 ---
 
