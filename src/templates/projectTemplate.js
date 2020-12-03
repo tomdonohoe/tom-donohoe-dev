@@ -1,22 +1,19 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import PostContainer from '../components/Container/PostContainer.js'
-
+import styles from './projectTemplate.module.css'
 
 const projectTemplate = ({ data }) => {
     const { markdownRemark } = data
     const { frontmatter, html } = markdownRemark
     return (
-        <PostContainer>
-        <div className="post">
-            <h1>{frontmatter.title}</h1>
-            <h2>tech stack: {frontmatter.stack}</h2>
-            <div 
-                className="content"
-                dangerouslySetInnerHTML={{ __html: html }}
-            />
+        <div className={styles.project}>
+              <h1>{frontmatter.title}</h1>
+              <p className={styles.techstack}>Tech stack: {frontmatter.stack}</p>
+              <div 
+                  className="content"
+                  dangerouslySetInnerHTML={{ __html: html }}
+              />
         </div>
-        </PostContainer>
     )
 }
 
