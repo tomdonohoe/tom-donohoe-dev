@@ -3,6 +3,8 @@ import { graphql } from 'gatsby'
 import ShareButtons from '../components/Share/Share.js'
 import Subscribe from '../components/Subscribe/Subscribe.js'
 import styles from './postTemplate.module.css'
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
+deckDeckGoHighlightElement()
 
 const blogTemplate = ({ data }) => {
     const { markdownRemark } = data

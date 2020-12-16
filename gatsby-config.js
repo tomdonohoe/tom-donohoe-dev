@@ -23,6 +23,15 @@ module.exports = {
         name: 'projects'
       }
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-highlight-code`
+          },
+        ],
+      },
+    }
   ]
 }
