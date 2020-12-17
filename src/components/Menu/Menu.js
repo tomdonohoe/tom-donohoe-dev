@@ -1,17 +1,34 @@
 import React from 'react'
+import { useState } from 'react'
 import menuStyles from './Menu.module.css'
 
 const Menu = () => {
 
+    const [isMenuActive, setMenuState] = useState(false)
+
+    // className={`${container} ${isMenuActive ? change : ''}`} onClick={() => setMenuState(!isMenuActive)}>
+
     return (
-        <nav className={menuStyles.menu}>
-            <div className={menuStyles.logo}>
-            <a href="/">Tom Donohoe</a>
+        <nav className={menuStyles.navigation}>
+            <div className={menuStyles.navigationBranding}>
+                <a href="/">Tom Donohoe</a>
             </div>
-            <div className={menuStyles.menuLinks}>
-                <a className={menuStyles.menuLink} href="/projects">projects</a>
-                <a className={menuStyles.menuLink} href="/about">about</a>
-                <a className={menuStyles.menuLink} href="/posts">blog</a>                
+            <div 
+                className={`${menuStyles.navigationOverlay} ${isMenuActive ? menuStyles.navigationToggled : ''}`}
+                >
+                <ul className={menuStyles.navigationLinks}>
+                    <li><a href="/projects">projects</a></li>
+                    <li><a href="/about">about</a></li>
+                    <li><a href="/posts">blog</a></li>             
+                </ul>
+            </div>
+            <div
+                className={`${menuStyles.navigationIcon} ${isMenuActive ? menuStyles.change : ''}`}
+                onClick={() => setMenuState(!isMenuActive)}
+                >
+                <div className={menuStyles.bar1}></div>
+                <div className={menuStyles.bar2}></div>
+                <div className={menuStyles.bar3}></div>
             </div>
         </nav>
     )
